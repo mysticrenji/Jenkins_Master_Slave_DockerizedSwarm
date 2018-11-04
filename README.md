@@ -1,0 +1,2 @@
+# Jenkins_Master_Slave_DockerizedSwarm
+Jenkins Master Slave Dockerized implementation
