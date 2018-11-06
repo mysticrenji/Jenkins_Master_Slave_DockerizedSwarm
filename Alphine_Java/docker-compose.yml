@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+    jenkins-slave:
+        container_name: jenkins-slave
+        restart: always
+        environment:
+            - 'JENKINS_URL=http://95.179.160.216:9000'
+        image: alphine-java
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock  # Expose the docker daemon in the container
+            - /home/jenkins:/home/jenkins # Avoid mysql volume mount issue
+
+
